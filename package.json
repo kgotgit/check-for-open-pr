@@ -1,5 +1,5 @@
 {
-  "name": "typescript-action",
+  "name": "@kgotgit/check-for-open-pr",
   "description": "GitHub Actions TypeScript template",
   "version": "0.0.0",
   "author": "",
@@ -67,7 +67,9 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.11.1"
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "@octokit/webhooks-types": "^7.6.1"
   },
   "devDependencies": {
     "@github/local-action": "^2.2.1",
@@ -77,6 +79,7 @@
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "@vercel/ncc": "^0.38.3",
+    "dotenv": "^16.4.7",
     "eslint": "^8.57.0",
     "eslint-plugin-jest": "^28.9.0",
     "eslint-plugin-jsonc": "^2.18.2",
